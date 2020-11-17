@@ -1,0 +1,42 @@
+
+<p id="notice"><%= notice %></p>
+
+<h2 class="text-white text-center">ACTIVITIES</h2>
+<div class="box-table">
+<table  class="table "  >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Distance</th>
+      <th>Duration</th>
+     
+      <th colspan="2"> Actions </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.Name %></td>
+        <td><%= activity.distance %></td>
+        
+        <td><%= activity.duration %></td>
+        <td><% if can? :update, activity %>
+        <%= link_to 'Edit', edit_activity_path(activity) , class: "btn btn-secondary"%>
+          <% end %>
+        </td>
+        <td>
+        <%= link_to 'Destroy', activity, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+   
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+<div  class=" text-center">
+<%= link_to 'New Activity', new_activity_path,class: "btn btn-primary " %>
+</div>
+

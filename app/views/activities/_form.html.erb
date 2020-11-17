@@ -1,0 +1,55 @@
+<div class="container show" >
+
+<% if current_user %>
+
+<%= form_with(model: activity, local: true) do |form| %>
+
+  <% if activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+        <% activity.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_for @activity do |f| %>
+    <div class="field">
+    <%= form.label :Name %>
+    <%= form.select(:Name, options_for_select([["running"],["Yoga"], 
+    ["cycling"],["walking"],["swimming"],["core  strength"],["Mountain Biking"],["snow boarding"],["Rowing"],["Hiking"]])) %>
+
+  </div>
+
+  <div class="field">
+    <%= form.label :distance %>
+    <%= form.text_field :distance %> 
+    
+  </div>
+  <div class="field">
+  <%= form.label :duration %>
+  <%= form.time_select :duration %>
+</div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<% end %>
+</div>
+</div>
+
+<% else %>
+    <p class="text-warning">
+        You need to be logged in to add activities
+    </p>
+
+<% end %>
+</div>
+
+
+
