@@ -83,7 +83,7 @@ body {
     
    }
    .card:hover ~.card, .card:focus-within{
-     transform:translateX(calc(-4rem));
+    transform:translateX(calc(4rem));
    }
    img{
     height:300px;
@@ -100,7 +100,7 @@ body {
 
    .show{
      color:white;
-     background-color: #5367a8;
+     background-color: #656d88;
     
 
 
@@ -156,11 +156,45 @@ body {
   background-color: #f2eef7;
   color:rgb(211, 142, 142)
 }
+.btn :hover{
+  transform: scale(1.15);
+}
+/* .btn :hover{
+  transform: scale(1.15);
+}
+ .sign-up{ 
+     position: relative;
+    min-height: 100%; 
+    /* height:50%;
+    width: 50%;
+    padding-top: 2rem; 
+    
+   } */
 
-
+ /* .login-content{
+   
+    background-color: #57bbf5;
+    padding: 2rem;
+    width:80%;
+  } */
+  /* .unique{
+    background-color:rgb(198, 140, 212);
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 480px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+} */
 
  
   .cl{
+      /* padding-bottom: 1.5rem; */
       font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
@@ -168,7 +202,37 @@ body {
     color: brown;
     font-size: 25px;
 }
+  /* .card{
+      background-color:rgb(198, 140, 212);
+      color:white;
+      height:50%;
+      transition: all 0.5s ease-in;
+     
+  }
+  .card :hover{
+    width:100%;
+    background-color: #140101;
 
+  } */
+  /* .heading {
+    color: white;
+    font-size: ;
+    transition: all 0.5s linear;
+
+}
+
+.heading:hover {
+    color: brown;
+    font-size: 4rem;
+} */
+/* .card-panel{
+  width:100%;
+  margin: 0 auto;
+  
+}
+  main {
+    flex: 1 0 auto;
+  } */
 
 .cly{
     width:100%;
@@ -184,6 +248,12 @@ body {
   text-align: center; 
 }
 
+/* .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+} */
 .contact p{
   text-align: center;
   color: white;
@@ -269,7 +339,7 @@ margin: 0;
 width: 100%;
 font-weight: 800;
 font-family: Roboto, sans-serif;
-color: rgb(7, 24, 37);
+color: rgb(234, 239, 243);
 text-transform: uppercase;
 font-size: 3.5em;
 text-align: center;
@@ -283,3 +353,7 @@ width: 100%;
 
 
 
+/* .menu-link:hover {
+  color: #1f93ff;
+  font-size: 2.5em;
+} */
