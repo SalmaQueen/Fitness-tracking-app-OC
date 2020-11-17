@@ -8,13 +8,13 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'devise'
 
 # Use sqlite3 as the database for Active Record
-# group :development, :test do
+group :development, :test do
   gem 'sqlite3'
-#  end
+ end
  
-#  group :production do
-#    gem 'pg'
-#  end
+ group :production do
+   gem 'pg'
+ end
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'bootstrap'
 # Use Puma as the app server
