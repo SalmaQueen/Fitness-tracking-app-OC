@@ -82,9 +82,9 @@ body {
     transform:translateY(-1rem);
     
    }
-   .card:hover ~.card, .card:focus-within{
-    transform:translateX(calc(-4rem)*-1);
-   }
+  //  .card:hover ~.card, .card:focus-within{
+  //   transform:translateX(calc(-4rem)*-1);
+  //  }
    img{
     height:300px;
    }
@@ -156,9 +156,9 @@ body {
   background-color: #f2eef7;
   color:rgb(211, 142, 142)
 }
-.btn :hover{
-  transform: scale(1.15);
-}
+// .btn :hover{
+//   transform: scale(1.15);
+// }
 /* .sign-up{ */
     /* position: relative;
     min-height: 100%; */
@@ -341,7 +341,7 @@ text-transform: uppercase;
 font-size: 3.5em;
 text-align: center;
   
-  transition: color 1s linear;
+transition: color 1s linear;
 }
 
 .image {
