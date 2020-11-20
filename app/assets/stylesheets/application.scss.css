@@ -83,11 +83,9 @@ body {
     
    }
    .card:hover ~.card, .card:focus-within{
-    transform:translateX(calc(4rem));
+    transform:translateX(calc(-4rem)*-1);
    }
-   img{
-    height:300px;
-   }
+   
    .card{
     background:white;
     border-radius:1rem;
@@ -115,14 +113,14 @@ body {
      .card{
        margin-bottom:1rem;
      }
-     .activity{
+     /* .activity{
       font-size: 2rem;
       cursor: pointer;
       padding:0.5rem;
       color: white;
       margin:auto;
     
-    }
+    } */
     input{
       width: 80% !important;
     }
@@ -136,7 +134,7 @@ body {
     
    }
    .card:hover ~.card{
-    translate:transformX(4rem);
+    translate:transformX((-4rem)*-1);
     background:rgb(171, 219, 231);
    }
    
@@ -150,6 +148,31 @@ body {
   cursor: pointer;
   color: black;
 
+}
+.activity{ 
+  color: white;
+  text-decoration: none;
+}
+
+
+/* h1 {
+  margin: 2em 0 1em .5em;
+  color: white;
+}
+
+p {
+  color: #B2CEF2;
+  line-height: 1.4em;
+  font-size: .9em;
+} */
+
+.activity {
+  display: inline-block;
+  background: #5099FF;
+  /* padding: .8em 1.7em; */
+  font-weight: bold;
+  border-radius: 2em;
+  /* transform: translateX(50%); */
 }
 .btn{
   border: 5% solid #6300a0;
@@ -264,6 +287,9 @@ body {
   
 
 }
+img{
+  height:300px;
+}
 
 .social-icon li {
   list-style: none;
@@ -347,9 +373,6 @@ text-align: center;
 transition: color 1s linear;
 }
 
-.image {
-width: 100%;
-}
 
 
 
