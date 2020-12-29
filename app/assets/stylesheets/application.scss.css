@@ -27,7 +27,7 @@ body {
     animation: responsive 5s infinite ease-in-out;
   }
   .box-table{
-    font:normal 12px/150% Arial, Helvetica, sans-serif;
+    font:normal 150% Arial, Helvetica, sans-serif;
     overflow:auto;
     margin:0 auto;
     display:block;
@@ -82,9 +82,9 @@ body {
     transform:translateY(-1rem);
     
    }
-   .card:hover ~.card, .card:focus-within{
+   /* .card:hover ~.card, .card:focus-within{
     transform:translateX(calc(-4rem)*-1);
-   }
+   } */
    
    .card{
     background:white;
@@ -129,10 +129,10 @@ body {
    .card:not(:first-child){
     margin-left:-4rem;
    }
-   .card:hover{
+   /* .card:hover{
     transform:translateY(-1rem);
     
-   }
+   } */
    .card:hover ~.card{
     /* translate:transformX((-4rem)*-1); */
     background:rgb(171, 219, 231);
@@ -177,7 +177,7 @@ p {
 .btn{
   border: 5% solid #6300a0;
   background-color: #f2eef7;
-  color:rgb(211, 142, 142)
+  color:rgb(211, 142, 142);
 }
 .btn :hover{
   transform: scale(1.15);
