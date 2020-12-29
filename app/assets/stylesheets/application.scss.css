@@ -134,7 +134,7 @@ body {
     
    }
    .card:hover ~.card{
-    translate:transformX((-4rem)*-1);
+    translate:transformX(-4rem*-1);
     background:rgb(171, 219, 231);
    }
    
